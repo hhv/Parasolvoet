@@ -18,24 +18,6 @@
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
-            "atomType": "Rectangle",
-            "name": "Rectangle",
-            "x": 0.31592554291623576,
-            "y": 0.322463768115942,
-            "uniqueID": "fcff5a90-9e96-4414-98f5-5226c1758209",
-            "ioValues": [
-                {
-                    "name": "x length",
-                    "ioValue": 1200
-                },
-                {
-                    "name": "y length",
-                    "ioValue": 500
-                }
-            ],
-            "description": "Creates a new rectangle."
-        },
-        {
             "atomType": "Extrude",
             "name": "Extrude",
             "x": 0.45656670113753883,
@@ -44,7 +26,7 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "fcff5a90-9e96-4414-98f5-5226c1758209"
+                    "ioValue": "e1480add-f6ce-4ea9-a445-bd3965742df6"
                 },
                 {
                     "name": "height",
@@ -87,22 +69,40 @@
             ],
             "description": "Generates Maslow gcode from the input geometry.",
             "partName": "Parasolvoet"
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.20992761116856254,
+            "y": 0.45108695652173914,
+            "uniqueID": "e1480add-f6ce-4ea9-a445-bd3965742df6",
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 1200
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 560
+                }
+            ],
+            "description": "Creates a new rectangle."
         }
     ],
     "allConnectors": [
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": "fcff5a90-9e96-4414-98f5-5226c1758209",
-            "ap2ID": "d089cea6-2e88-4c60-b2d4-3554ea22dc59"
-        },
         {
             "ap1Name": "geometry",
             "ap2Name": "Geometry",
             "ap2Primary": false,
             "ap1ID": "d089cea6-2e88-4c60-b2d4-3554ea22dc59",
             "ap2ID": "7c6673db-7c0d-4831-a4e6-2dc283528567"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": "e1480add-f6ce-4ea9-a445-bd3965742df6",
+            "ap2ID": "d089cea6-2e88-4c60-b2d4-3554ea22dc59"
         }
     ],
     "unitsKey": "MM",
