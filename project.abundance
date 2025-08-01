@@ -14,7 +14,12 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": "ae076c0f-71a4-4098-bc7c-82234189474b",
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "7c6673db-7c0d-4831-a4e6-2dc283528567"
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -30,7 +35,7 @@
                 },
                 {
                     "name": "height",
-                    "ioValue": 18
+                    "ioValue": 10
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -42,10 +47,6 @@
             "y": 0.5489130434782609,
             "uniqueID": "7c6673db-7c0d-4831-a4e6-2dc283528567",
             "ioValues": [
-                {
-                    "name": "Geometry",
-                    "ioValue": "d089cea6-2e88-4c60-b2d4-3554ea22dc59"
-                },
                 {
                     "name": "Tool Size",
                     "ioValue": 6.35
@@ -87,15 +88,25 @@
                 }
             ],
             "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Constant",
+            "name": "Constant",
+            "x": 0.2716688227684347,
+            "y": 0.7955706984667803,
+            "uniqueID": "a0b3a178-cae7-4930-8191-1b52d54e6a8c",
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 10
         }
     ],
     "allConnectors": [
         {
-            "ap1Name": "geometry",
-            "ap2Name": "Geometry",
+            "ap1Name": "Gcode",
+            "ap2Name": "number or geometry",
             "ap2Primary": false,
-            "ap1ID": "d089cea6-2e88-4c60-b2d4-3554ea22dc59",
-            "ap2ID": "7c6673db-7c0d-4831-a4e6-2dc283528567"
+            "ap1ID": "7c6673db-7c0d-4831-a4e6-2dc283528567",
+            "ap2ID": "ae076c0f-71a4-4098-bc7c-82234189474b"
         },
         {
             "ap1Name": "geometry",
@@ -103,10 +114,17 @@
             "ap2Primary": true,
             "ap1ID": "e1480add-f6ce-4ea9-a445-bd3965742df6",
             "ap2ID": "d089cea6-2e88-4c60-b2d4-3554ea22dc59"
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "height",
+            "ap2Primary": false,
+            "ap1ID": "a0b3a178-cae7-4930-8191-1b52d54e6a8c",
+            "ap2ID": "d089cea6-2e88-4c60-b2d4-3554ea22dc59"
         }
     ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
